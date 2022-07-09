@@ -1,0 +1,53 @@
+/* # Color Pallette */
+:root {
+  --turquoise-green: #aae0c4ff;
+  --china-rose: #b15c73ff;
+  --medium-sea-green: #35bc79ff;
+  --tickle-me-pink: #ff85abff;
+  --old-burgundy: #4b3137ff;
+}
+/* # CSS Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* # Global CSS Selectors */
+body {
+  width: 90%;
+  margin: 2em auto;
+  font-family: 'Edu TAS Beginner', cursive;
+}
+
+/* # Mobile View Page Styling */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+
+.main-image-container {
+  order: 2;
+  width: 70%;
+}
+
+.main-image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+h1 {
+  font-size: 44px;
+  color: var(--old-burgundy);
+  order: 1;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

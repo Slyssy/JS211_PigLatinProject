@@ -7,31 +7,41 @@ const readline = require('readline');
 // use the readline module to print out to the command line
 const rl = readline.createInterface({
   input: process.stdin,
-  output: process.stdout
+  output: process.stdout,
 });
 
-
-const pigLatin = (word) => {
-
-  // Your code here
-
-}
+const pigLatin = (sentence) => {
+  //? Create an array of words.
+  const words = sentence.match(/\w+/g);
+  const arrayOfPigLatin = [];
+  words.map((word) => {
+    word = word.trim().toLowerCase();
+    const firstVowelIndex = word.search(/[a,e,i,o,u]/g);
+    let trimmedLetters = word.slice(0, firstVowelIndex);
+    let trimmedWord = word.slice(firstVowelIndex);
+    if (firstVowelIndex === 0) {
+      return arrayOfPigLatin.push(`${trimmedWord}${trimmedLetters}yay`);
+    } else {
+      return arrayOfPigLatin.push(`${trimmedWord}${trimmedLetters}ay`);
+    }
+  });
+  return `${arrayOfPigLatin.join(' ')}`;
+};
 
 // the first function called in the program to get an input from the user
 // to run the function use the command: node main.js
 // to close it ctrl + C
 const getPrompt = () => {
   rl.question('word ', (answer) => {
-    console.log( pigLatin(answer) );
+    console.log(pigLatin(answer));
     getPrompt();
   });
-}
+};
 
 // Unit Tests
 // to use them run the command: npm test main.js
 // to close them ctrl + C
 if (typeof describe === 'function') {
-
   describe('#pigLatin()', () => {
     it('should translate a simple word', () => {
       assert.equal(pigLatin('car'), 'arcay');
@@ -51,15 +61,8 @@ if (typeof describe === 'function') {
     });
   });
 } else {
-
   getPrompt();
-
 }
-
-
-
-
-
 
 // **********
 //   HINTS

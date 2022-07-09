@@ -1,19 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title></title>
-    <script src="main.js"></script>
+    <meta charset="utf-8" />
+    <title>Pig Latin Translator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <hr/>
+    <header>
+      <div class="main-image-container">
+        <img
+          src="./images/pig-latin-image.png"
+          alt="Image of a cartoon piggie
+        teaching Pig Latin"
+          class="main-image"
+        />
+      </div>
+      <h1>ephenStay's igPay atinLay anslatorTray!</h1>
+    </header>
     <div id="display-element"></div>
     <form>
-      <input id="user-input" type="text">
+      <input id="user-input" type="text" />
       <!-- How do you get this input sent to the pigLatin() function? -->
       <button onclick="pigLatin()">Translate</button>
-    </form>  
-    <hr/>
+    </form>
   </body>
 </html>
