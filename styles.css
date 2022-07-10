@@ -26,7 +26,8 @@ body {
 
 /* # Mobile View Page Styling */
 .page-container {
-  margin-top: 150px;
+  margin: 150px auto;
+  max-width: 1200px;
   height: 80vh;
   display: flex;
   flex-direction: column;
@@ -127,4 +128,18 @@ button:active {
   align-items: center;
   border: 2px solid var(--china-rose);
   border-radius: 20px;
+}
+
+@media only screen and (min-width: 992px) {
+  header {
+    flex-direction: row;
+  }
+
+  .main-image-container {
+    order: 1;
+  }
+
+  form {
+    flex-direction: row;
+  }
 }
