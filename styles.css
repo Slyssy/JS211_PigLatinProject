@@ -99,11 +99,21 @@ input[type='text'] {
 }
 button {
   background-color: var(--tickle-me-pink);
-  color: var(--turquoise-green);
+  color: white;
   font-size: 2em;
   padding: 1em;
   border: none;
   border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: scale(1);
 }
 
 #display-element {
