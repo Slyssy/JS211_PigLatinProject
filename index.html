@@ -10,25 +10,30 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <script src="main.js" defer></script>
+    <script src="index.js" defer></script>
   </head>
   <body>
-    <header>
-      <div class="main-image-container">
-        <img
-          src="./images/pig-latin-image.png"
-          alt="Image of a cartoon piggie
+    <div class="page-container">
+      <header>
+        <div class="main-image-container">
+          <img
+            src="./images/pig-latin-image.png"
+            alt="Image of a cartoon piggie
         teaching Pig Latin"
-          class="main-image"
-        />
-      </div>
-      <h1>ephenStay's igPay atinLay anslatorTray!</h1>
-    </header>
-    <div id="display-element"></div>
-    <form>
-      <input id="user-input" type="text" />
-      <!-- How do you get this input sent to the pigLatin() function? -->
-      <button onclick="pigLatin()">Translate</button>
-    </form>
+            class="main-image"
+          />
+        </div>
+        <h1>ephenStay's igPay atinLay anslatorTray!</h1>
+      </header>
+      <main>
+        <h2>Enter a Word or a Phrase to be Translated.</h2>
+        <form>
+          <input id="user-input" type="text" />
+          <!-- How do you get this input sent to the pigLatin() function? -->
+          <button type="button" onclick="pigLatin()">Translate</button>
+        </form>
+      </main>
+      <div id="display-element"></div>
+    </div>
   </body>
 </html>
