@@ -139,6 +139,11 @@ button:active {
     order: 1;
   }
 
+  main h2 {
+    font-size: 40px;
+    color: var(--old-burgundy);
+  }
+
   form {
     flex-direction: row;
   }
