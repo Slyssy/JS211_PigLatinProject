@@ -120,6 +120,7 @@ button:active {
 #display-element {
   height: 20vh;
   width: 100%;
+  padding: 1.5em;
   background-color: white;
   font-size: 44px;
   color: var(--old-burgundy);
@@ -128,6 +129,7 @@ button:active {
   align-items: center;
   border: 2px solid var(--china-rose);
   border-radius: 20px;
+  overflow: auto;
 }
 
 @media only screen and (min-width: 992px) {
